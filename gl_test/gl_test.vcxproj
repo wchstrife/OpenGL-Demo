@@ -130,7 +130,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\OpenGL\glad\src\glad.c" />
-    <ClCompile Include="HelloTriangle.cpp" />
+    <ClCompile Include="HelloShader.cpp" />
+    <ClCompile Include="HelloTriangle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="HelloWindow.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

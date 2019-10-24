@@ -114,7 +114,7 @@ int main()
 		 0.5f, -0.5f, 0.0f, // Right 
 		 0.0f,  0.5f, 0.0f  // Top   
 	};
-	GLuint VBO;		// 定点缓冲对象
+	GLuint VBO;		// 顶点缓冲对象
 	GLuint VAO;		// 顶点数组对象
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
