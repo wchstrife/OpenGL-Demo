@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Work\OpenGL\glfw-3.3.bin.WIN32\include;D:\Work\OpenGL\glad\include;D:\Work\OpenGL\glew-2.1.0\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Work\OpenGL\glfw-3.3.bin.WIN32\include;D:\Work\OpenGL\glm;D:\Work\OpenGL\glad\include;D:\Work\OpenGL\glew-2.1.0\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Work\OpenGL\glfw-3.3.bin.WIN32\lib-vc2019;D:\Work\OpenGL\glew-2.1.0\lib\Release\Win32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -140,6 +140,9 @@
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader_s.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
